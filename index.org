@@ -1,0 +1,101 @@
+#+title: Corporate Finance Exam Practice Problems
+#+author: Matt Brigida, Ph.D.
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+* Introduction and the Agency Problem
+
+
+* Financial Statements and Cash Flow
+
+
+
+* Financial Ratios
+
+#+begin_export html
+<script>
+var submitAnswer_FR1_ = function() {
+
+  var radios = document.getElementsByName('choice_FR1_');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value; 
+         break;
+       }
+  }
+  
+  if (val == "" ) {
+   // alert('please select choice answer');
+document.getElementById("p_FR1_").innerHTML = "Choose your answer.";
+document.getElementById("p_FR1_").style.backgroundColor = "white";
+  } else if ( val == "Correct" ) {
+//    alert('Answer is correct !');
+document.getElementById("p_FR1_").innerHTML = "Correct!";
+document.getElementById("p_FR1_").style.backgroundColor = "#90EE90";
+  } else {
+//    alert('Answer is wrong');
+document.getElementById("p_FR1_").innerHTML = "Wrong";
+document.getElementById("p_FR1_").style.backgroundColor = "#ff6666";
+  }
+};
+</script>
+
+
+<br>
+<p>2. Gore Mountain Inc. has a total debt ratio (Debt/Assets) of 0.6.  What is its debt-to-equity ratio?</p>
+<form >
+<input type="radio" name="choice_FR1_" value="Incorrect"> -2.3<br>
+<input type="radio" name="choice_FR1_" value="Incorrect"> 0.0<br>
+<input type="radio" name="choice_FR1_" value="Correct"> 1.5<br>
+<input type="radio" name="choice_FR1_" value="Incorrect"> 7.2
+</form>
+<button onclick="submitAnswer_FR1_()">Submit Answer</button>
+<span id="p_FR1_"></span>
+#+end_export
+
+
+#+begin_export html
+<script>
+var submitAnswer_FR2_ = function() {
+
+  var radios = document.getElementsByName('choice_FR2_');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value; 
+         break;
+       }
+  }
+  
+  if (val == "" ) {
+   // alert('please select choice answer');
+document.getElementById("p_FR2_").innerHTML = "Choose your answer.";
+document.getElementById("p_FR2_").style.backgroundColor = "white";
+  } else if ( val == "Correct" ) {
+//    alert('Answer is correct !');
+document.getElementById("p_FR2_").innerHTML = "Correct!";
+document.getElementById("p_FR2_").style.backgroundColor = "#90EE90";
+  } else {
+//    alert('Answer is wrong');
+document.getElementById("p_FR2_").innerHTML = "Wrong";
+document.getElementById("p_FR2_").style.backgroundColor = "#ff6666";
+  }
+};
+</script>
+
+
+<br>
+<p>2. Hinckley Bikes. has a 12% profit margin, and a total asset turnover of 3.  What is its return on assets?</p>
+<form >
+<input type="radio" name="choice_FR2_" value="Incorrect"> 5%<br>
+<input type="radio" name="choice_FR2_" value="Incorrect"> 12%<br>
+<input type="radio" name="choice_FR2_" value="Incorrect"> 15%<br>
+<input type="radio" name="choice_FR2_" value="Correct"> 36%
+</form>
+<button onclick="submitAnswer_FR2_()">Submit Answer</button>
+<span id="p_FR2_"></span>
+#+end_export
+
+* Growth Rates
+
+
